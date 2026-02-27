@@ -27,10 +27,10 @@ const handleSubmit = async (e) => {
   e.preventDefault();
 
   setLoading(true);
-  setSuccess(false);
+  setSuccess(true);
 
   try {
-    const response = await fetch("http://localhost:8080/api/contact", {
+    const response = await fetch("https://your-backend-url.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
