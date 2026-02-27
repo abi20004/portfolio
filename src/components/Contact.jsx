@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
 
   const [formData, setFormData] = useState({
@@ -22,46 +24,39 @@ const handleChange = (e) => {
 };
 
 
-
-const handleSubmit = async (e) => {
+const handleSubmit = (e) => {
   e.preventDefault();
-
   setLoading(true);
-  setSuccess(true);
 
-  try {
-    const response = await fetch("https://your-backend-url.onrender.com/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    });
+  emailjs.send(
+    "service_kdr7wxz",   // Dashboard la irukum service id
+    "template_ygu4eh4",  // Template ID
+    {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      title: formData.subject,
+      time: new Date().toLocaleString(),
+    },
+    "R6uV8bt6phBEf-Rxf"    // Dashboard la irukum public_key
+  ).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      setLoading(false);
+      setSuccess(true);
 
-    const result = await response.text();
-    // alert(result);
-
-    setLoading(false);
-    setSuccess(true);
-
-    // Clear form after success
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
-
-    // Hide success after 3 seconds
-    setTimeout(() => setSuccess(false), 1500);
-
-  } catch (error) {
-    console.error("Error:", error);
-
-    setLoading(false);
-
-    alert("Something went wrong!");
-  }
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setTimeout(() => setSuccess(false), 1500);
+    },git add .
+git commit -m "update"
+git push
+    (error) => {
+      console.log("FAILED...", error.text);
+      // setLoading(false);
+      alert("Something went wrong!");
+    }
+  );
 };
   return (
     <div className="w-full flex flex-col items-center justify-center bg-gray-950">
