@@ -48,9 +48,7 @@ const handleSubmit = (e) => {
 
       setFormData({ name: "", email: "", subject: "", message: "" });
       setTimeout(() => setSuccess(false), 1500);
-    },git add .
-git commit -m "update"
-git push
+    },
     (error) => {
       console.log("FAILED...", error.text);
       // setLoading(false);
