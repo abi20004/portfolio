@@ -29,8 +29,8 @@ const handleSubmit = (e) => {
   setLoading(true);
 
   emailjs.send(
-    "service_kdr7wxz",   // Dashboard la irukum service id
-    "template_ygu4eh4",  // Template ID
+     import.meta.env.VITE_EMAILJS_SERVICE_ID,  // Dashboard la irukum service id
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  // Template ID
     {
       name: formData.name,
       email: formData.email,
@@ -39,7 +39,7 @@ const handleSubmit = (e) => {
       title: formData.subject,
       time: new Date().toLocaleString(),
     },
-    "R6uV8bt6phBEf-Rxf"    // Dashboard la irukum public_key
+    import.meta.env.VITE_EMAILJS_PUBLIC_KEY    // Dashboard la irukum public_key
   ).then(
     (response) => {
       console.log("SUCCESS!", response.status, response.text);
