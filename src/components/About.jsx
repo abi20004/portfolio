@@ -12,7 +12,7 @@ const About = () => {
         transition={{ duration: 1.5 }}
         className="text-4xl sm:text-xl md:text-4xl font-medium text-cyan-50 md:px-4 md:pt-10 md:pb-8 pb-2 lg:pb-4 md:pr-68"
       >
-        About <b className="text-teal-300">Me</b>...
+        About <b className="text-yellow-400">Me</b>...
       </motion.h2>
 
       {/* About Me Paragraph */}
@@ -23,15 +23,15 @@ const About = () => {
         className="text-cyan-50 font-stretch-105% leading-relaxed px-4 sm:px-6 md:px-12 py-6 md:py-9 
                    selection:bg-teal-900 selection:text-white text-center md:text-left"
       >
-        I am a <span className="tracking-wide uppercase text-teal-300 font-bold">Java Full Stack Developer</span> 
+        I am a <span className="tracking-wide uppercase text-yellow-400 font-bold">Java Full Stack Developer</span> 
         with hands-on experience in building practical projects such as a 
-        <span className="text-cyan-200"> personal portfolio website</span> and a 
-        <span className="text-cyan-200"> functional e-commerce application</span>.
+        <span className="text-amber-200"> personal portfolio website</span> and a 
+        <span className="text-amber-200"> functional e-commerce application</span>.
         
         <br /><br />
         
         With a strong foundation in both 
-        <span className="tracking-wide uppercase text-teal-300 font-bold"> Frontend & Backend Development</span>, 
+        <span className="tracking-wide uppercase text-yellow-300 font-bold"> Frontend & Backend Development</span>, 
         I focus on writing clean, efficient code and creating applications that deliver real value to users.
         
         <br /><br />
@@ -47,17 +47,17 @@ const About = () => {
         <div className="w-full md:w-1/3">
           <span className="font-bold text-cyan-50">Vins Christian College of Engineering</span><br />
           B.E. Computer Science and Engineering<br />
-          2021 – 2025 | <span className="text-teal-200 shadow">Secured</span> 8.3 CGPA
+          2021 – 2025 | <span className="text-amber-200 shadow">Secured</span> 8.3 CGPA
         </div>
 
         <div className="w-full md:w-1/3">
           <span className="font-bold text-cyan-50">K.D.V.P. Government Girls HrS School</span><br />
-          HSS (12th) – 2020 – 2021 | <span className="text-teal-200 shadow">Secured</span> 78.3%
+          HSS (12th) – 2020 – 2021 | <span className="text-amber-200 shadow">Secured</span> 78.3%
         </div>
 
         <div className="w-full md:w-1/3">
           <span className="font-bold text-cyan-50">K.D.V.P. Government Girls HrS School</span><br />
-          SSLC (10th) – 2018 – 2019 | <span className="text-teal-200 shadow">Secured</span> 63%
+          SSLC (10th) – 2018 – 2019 | <span className="text-amber-200 shadow">Secured</span> 63%
         </div>
       </div>
     </div>
