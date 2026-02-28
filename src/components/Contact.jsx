@@ -51,7 +51,7 @@ const handleSubmit = (e) => {
     },
     (error) => {
       console.log("FAILED...", error.text);
-      // setLoading(false);
+      setLoading(false);
       alert("Something went wrong!");
     }
   );
