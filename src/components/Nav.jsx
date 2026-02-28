@@ -62,9 +62,9 @@ function Nav() {
 
 
   return (
-    <AppBar sx={{bgcolor:'#030712'}} >
+    <AppBar sx={{bgcolor:'black'}} >
       {/* <Container maxWidth="xl" className="relative bg-gray-950 lg:w-full md:h-[100px] py-4"> */}
-      <Container maxWidth="xl" className="relative bg-gray-950 lg:w-full md:h-[100px] py-4">
+      <Container maxWidth="xl" className="relative bg-black lg:w-full md:h-[100px] py-4">
 
         <Toolbar disableGutters>
           <Typography
@@ -73,12 +73,12 @@ function Nav() {
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 2,
+              mr:2,
               display: { xs: 'flex', md: 'flex' },
               textDecoration: 'none',
             }}
           >
-            <img src={me1} className="h-10 w-28 md:h-15 md:w-38" alt="abi1" />
+            <img src={me1} className="h-10 w-18 md:h-15 md:w-38" alt="abi1" />
           </Typography>
 
          {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, pl: 13 }}> */}
@@ -120,7 +120,7 @@ function Nav() {
             >
               {pages.map((page) => (
                 <MenuItem key={page}  onClick={() => handleNavClick(page)}>
-                  <Typography  className="text-sm cursor-pointer hover:text-teal-100 text-teal-600 mx-2 px-2" >
+                  <Typography  className="text-sm cursor-pointer hover:text-yellow-100 text-yellow-600 mx-2 px-2" >
                     {page}
                   </Typography>
                 </MenuItem>
@@ -134,7 +134,7 @@ function Nav() {
                 key={page}
                 onClick={() => handleNavClick(page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-                className="text-sm cursor-pointer hover:text-teal-100 text-teal-300 mx-2 px-2"
+                className="text-sm cursor-pointer hover:text-yellow-100 text-yellow-400 mx-2 px-2"
               >
                 {page}
               </p>

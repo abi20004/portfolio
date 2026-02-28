@@ -10,7 +10,7 @@ import { color } from 'framer-motion'
 
 const App = () => {
   return (
-    <div className='bg-gray-950 w-full relative md:px-9 md:pt-8 pt-2 lg:pt-14'>
+    <div className='bg-black w-full relative md:px-9 md:pt-8 pt-2 lg:pt-14'>
       <Nav />
 <section id="home" className="scroll-mt-24"><Home /></section>
 <section id="about" className="scroll-mt-24"><About /></section>
@@ -18,9 +18,9 @@ const App = () => {
 <section id="project" className="scroll-mt-24"><Project /></section>
 <section id="contact" className="scroll-mt-24"><Contact /></section>
 
- <div id="footer" className="bg-gray-950 text-white py-6 text-center flex-cols">
+ <div id="footer" className="text-white py-6 text-center flex-cols">
         <div >
-          <p className='text-teal-300 text-2xl font-serif'><span  className='font-bold text-3xl'>A</span>birami</p>
+          <p className='text-yellow-400 text-2xl font-serif'><span  className='font-bold text-3xl'>A</span>birami</p>
         </div>
           <div className='flex flex-row py-6 justify-center'> 
    <a 
@@ -29,7 +29,7 @@ const App = () => {
     rel="noopener noreferrer" 
     className="pl-"
   >
-    <FaLinkedin size={28} className='text-teal-100 hover:text-white'/>
+    <FaLinkedin size={28} className='text-yellow-50 hover:text-white'/>
   </a>
   <a 
     href="https://github.com/abi20004" 
@@ -37,13 +37,13 @@ const App = () => {
     rel="noopener noreferrer" 
     className="pl-8"
   >
-    <FaGithub size={28} className='text-teal-100 hover:text-white' />
+    <FaGithub size={28} className='text-yellow-50 hover:text-white' />
   </a>
   <a 
     href="mailto:abirami10122004@gmail.com" 
     className="pl-8"
   >
-    <FaEnvelope size={28} className='text-teal-100 hover:text-white'/>
+    <FaEnvelope size={28} className='text-yellow-50 hover:text-white'/>
   </a>
 
         </div>

@@ -23,7 +23,7 @@ const Project = () => {
     image: front,
     title: "Portfolio",
     desc: "Built with HTML, CSS, Tailwind CSS, React, Material UI.",
-    link: "https://www.portfolio.com"
+    link: "abirami-portfolio-tan.vercel.app"
   },
   {
     image: clgpro,
@@ -44,7 +44,7 @@ const Project = () => {
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1.5 }}>
-            My <span className='font-bold text-teal-300'>P</span>rojects...
+<span className='font-bold text-yellow-400 text-5xl'>P</span>rojects...
             </motion.h2>
           </p>
         </div>  
@@ -71,9 +71,9 @@ const Project = () => {
                     alt={proj.title}
                   />
                   <CardContent>
-                    <p className='text-lg text-teal-500'>{proj.title}</p>
-                    <p className='text-sm font-normal text-gray-500'>{proj.desc}</p>
-                    <a href={proj.link}>{proj.link}</a>
+                    <p className='text-lg text-yellow-600 font-serif'>{proj.title}</p>
+                    <p className='text-sm font-extralight text-gray-500'>{proj.desc}</p>
+                    <a className='text-sm' href={proj.link}>{proj.link}</a>
                   </CardContent>
                 </CardActionArea>
               </Card>

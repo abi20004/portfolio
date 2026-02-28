@@ -57,7 +57,7 @@ const handleSubmit = (e) => {
   );
 };
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-gray-950">
+    <div className="w-full flex flex-col items-center justify-center ">
       <div className="w-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 2xl:px-40">
         <div className="w-full max-w-screen py-16 sm:py-20 md:py-24">
 
@@ -69,7 +69,7 @@ const handleSubmit = (e) => {
             viewport={{ once: false, amount: 0.3 }}
             className="text-4xl sm:text-2xl md:text-4xl font-medium text-cyan-50 text-center"
           >
-            Contact <b className="text-teal-300">Me</b>
+            Contact <b className="text-yellow-400">Me</b>
           </motion.h2>
 
           {/* Subtext */}
@@ -78,7 +78,7 @@ const handleSubmit = (e) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.6 }}
             viewport={{ once: false }}
-            className="text-sm md:text-base text-teal-200 font-serif pt-4 text-center"
+            className="text-sm md:text-base text-amber-200 font-serif pt-4 text-center"
           >
             Feel free to reach out anytime :
           </motion.p>
@@ -103,8 +103,8 @@ const handleSubmit = (e) => {
                      value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
-                    className="w-full mt-2 rounded-md border border-teal-100 px-4 py-2 
-                               focus:ring-2 focus:ring-teal-300 focus:outline-none text-teal-100"
+                    className="w-full mt-2 rounded-md border border-yellow-100 px-4 py-2 
+                               focus:ring-2 focus:ring-yellow-100 focus:outline-none text-white"
                   />
                 </motion.div>
               </div>
@@ -122,8 +122,8 @@ const handleSubmit = (e) => {
                      value={formData.email}
                      onChange={handleChange}
                     placeholder="you@example.com"
-                    className="w-full mt-2 rounded-md border border-teal-100 px-4 py-2 
-                               focus:ring-2 focus:ring-teal-300 focus:outline-none text-teal-100"
+                    className="w-full mt-2 rounded-md border border-yellow-100 px-4 py-2 
+                               focus:ring-2 focus:ring-yellow-100 focus:outline-none text-white"
                   />
                 </motion.div>
               </div>
@@ -145,8 +145,8 @@ const handleSubmit = (e) => {
                  value={formData.subject}
                  onChange={handleChange}
                 placeholder="Subject of your message"
-                className="w-full mt-2 rounded-md border border-teal-100 px-4 py-2 
-                           focus:ring-2 focus:ring-teal-300 focus:outline-none text-teal-100"
+                className="w-full mt-2 rounded-md border border-yellow-100 px-4 py-2 
+                           focus:ring-2 focus:ring-yellow-100 focus:outline-none text-white"
               />
             </motion.div>
 
@@ -165,8 +165,8 @@ const handleSubmit = (e) => {
                value={formData.message}
                onChange={handleChange}
                 placeholder="Write your message..."
-                className="w-full mt-2 rounded-md border border-teal-100 px-4 py-4 
-                           focus:ring-2 focus:ring-teal-300 focus:outline-none text-teal-100"
+                className="w-full mt-2 rounded-md border border-yellow-100 px-4 py-4 
+                           focus:ring-2 focus:ring-yellow-100 focus:outline-none text-white"
               ></textarea>
             </motion.div>
 
@@ -178,16 +178,17 @@ const handleSubmit = (e) => {
               viewport={{ once: false }}
               className="pt-8 flex justify-center"
             >
-              <button
+              <button 
+              sx={{ borderColor: 'yellow', color: 'yellow' }}
                 type="submit"
                 disabled={loading}
-                className="w-36 h-12 bg-teal-200 text-teal-300 font-semibold text-sm py-2 rounded-md shadow-md 
-                           hover:bg-teal-700 hover:text-teal-600 hover:scale-105 transition-all duration-300 flex items-center justify-center"
+                className="w-36 h-12 bg-yellow-200 text-yellow-300 font-semibold text-sm py-2 rounded-md shadow-md 
+                           hover:bg-yellow-700 hover:text-yellow-600 hover:scale-105 transition-all duration-300 flex items-center justify-center"
               >
                 {loading ? (
     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
   ) : (
-    "Send ✈️"
+    "Send 📩"
   )}
               </button>
             </motion.div>
@@ -198,7 +199,7 @@ const handleSubmit = (e) => {
     initial={{ opacity: 0, y: 10 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
-    className="text-teal-400 font-bold text-center mt-4"
+    className="text-green-400 font-bold text-center mt-4"
   >
     ✅ Message Sent Successfully!
   </motion.p>

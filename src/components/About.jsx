@@ -21,7 +21,7 @@ const About = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
         className="text-cyan-50 font-stretch-105% leading-relaxed px-4 sm:px-6 md:px-12 py-6 md:py-9 
-                   selection:bg-teal-900 selection:text-white text-center md:text-left"
+                   selection:bg-zinc-800 selection:text-white text-center md:text-left"
       >
         I am a <span className="tracking-wide uppercase text-yellow-400 font-bold">Java Full Stack Developer</span> 
         with hands-on experience in building practical projects such as a 
@@ -42,7 +42,7 @@ const About = () => {
 
       {/* Education Section */}
       <div className="flex flex-col md:flex-row lg:flex-row 2xl:flex-row items-start w-full md:w-3/4 gap-6 mt-8 
-                      selection:bg-teal-900 selection:text-white font-stretch-105% text-left">
+                      selection:bg-zinc-800 selection:text-white font-stretch-105% text-left">
 
         <div className="w-full md:w-1/3">
           <span className="font-bold text-cyan-50">Vins Christian College of Engineering</span><br />
